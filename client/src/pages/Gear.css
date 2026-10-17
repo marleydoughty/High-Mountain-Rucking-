@@ -1,0 +1,90 @@
+.gear-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.gear-section {
+  margin-bottom: 4rem;
+}
+
+.gear-section-title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.gear-section-title span {
+  font-size: 1.5rem;
+}
+
+.gear-list {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.gear-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+.gear-item:hover {
+  border-color: var(--color-accent);
+}
+
+.gear-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.gear-item-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.gear-item-brand {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.gear-item-note {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.gear-item-weight {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-top: 0.15rem;
+}
+
+.gear-note-banner {
+  background: #1a1a14;
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 2px;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}

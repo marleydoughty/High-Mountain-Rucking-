@@ -1,0 +1,235 @@
+.merch-hero {
+  padding: 10rem 2rem 5rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #0d120d, var(--color-bg));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.merch-hero-logo {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 24px rgba(200, 169, 110, 0.2));
+}
+
+.merch-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1;
+}
+
+.merch-hero p {
+  color: var(--color-muted);
+  max-width: 480px;
+  font-size: 1rem;
+}
+
+/* Filter tabs */
+.merch-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2.5rem 2rem 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(200, 169, 110, 0.06);
+}
+
+/* Product grid */
+.merch-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.product-img-wrap {
+  position: relative;
+  background: #111;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+/* logo-only mockup for stickers/patches */
+.product-img-wrap.logo-bg {
+  background: #0a0a0a;
+}
+
+.product-img-wrap.logo-bg img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.04);
+}
+
+.product-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.badge-new {
+  background: var(--color-accent);
+  color: #0d0d0d;
+}
+.badge-limited {
+  background: #3d1a1a;
+  color: #e06060;
+}
+
+.product-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-category {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.35rem;
+}
+
+.product-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.product-desc {
+  font-size: 0.825rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.product-price {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.add-btn {
+  background: var(--color-accent);
+  color: #0d0d0d;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: var(--color-accent-dark);
+}
+
+.add-btn:disabled {
+  background: var(--color-border);
+  color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+/* Variants */
+.product-variants {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.variant-chip {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  color: var(--color-muted);
+}
+
+/* Coming soon banner */
+.merch-coming-soon {
+  text-align: center;
+  padding: 3rem 2rem 5rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.merch-coming-soon p {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+}
