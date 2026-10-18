@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Merch.css';
 import './Routes.css';
 import hmrLogo from '/hmr-logo.png';
+import Toast from '../components/Toast';
 
 type Product = {
   id: number;
@@ -118,6 +119,7 @@ type Filter = (typeof filters)[number];
 
 export default function Merch() {
   const [activeFilter, setActiveFilter] = useState<Filter>('All');
+  const [toastVisible, setToastVisible] = useState(false);
 
   const visible =
     activeFilter === 'All'
@@ -188,7 +190,10 @@ export default function Merch() {
               )}
               <div className="product-footer">
                 <span className="product-price">{product.price}</span>
-                <button className="add-btn" disabled={product.comingSoon}>
+                <button
+                  className="add-btn"
+                  disabled={product.comingSoon}
+                  onClick={() => setToastVisible(true)}>
                   {product.comingSoon ? 'Coming Soon' : 'Add to Cart'}
                 </button>
               </div>
@@ -196,6 +201,11 @@ export default function Merch() {
           </article>
         ))}
       </div>
+      <Toast
+        message="Coming soon!"
+        visible={toastVisible}
+        onHide={() => setToastVisible(false)}
+      />
     </>
   );
 }
