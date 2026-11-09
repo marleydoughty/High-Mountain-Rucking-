@@ -32,17 +32,18 @@ const routes = [
       'https://www.alltrails.com/trail/us/california/siligo-peak-loop-via-granite-lakes-trail',
   },
   {
-    title: 'TBD',
+    title: 'Death March — Stoney Ridge to Long Canyon',
     location: 'Trinity Alps Wilderness, CA',
-    miles: 'TBD',
-    elevation: 'TBD',
-    days: 'TBD',
-    difficulty: 'Moderate',
-    difficultyClass: 'moderate',
-    desc: 'TBD',
-    img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=70',
+    miles: '19 mi',
+    elevation: '~5,500 ft',
+    days: '3 days',
+    difficulty: 'Hard',
+    difficultyClass: 'hard',
+    desc: 'Starting along Stoney Ridge Trail, the Death March begins with a challenging ascent over Stonewall Pass and Deer Creek Pass before reaching Summit Lake. Day two tackles the Four Lakes Loop, winding through the rugged alpine landscape and connecting four of the Trinity Alps’ most scenic mountain lakes. On the final day, the expedition pushes through snow-covered sections of Long Canyon before making the long descent out of the wilderness. Spanning three days of steep climbs, demanding terrain, and unpredictable mountain conditions, this route earned its name as one of High Mountain Rucking’s toughest adventures.',
+    img: '/death-march-2024.jpg',
     gpx: '#',
-    alltrails: '#',
+    alltrails:
+      'https://www.alltrails.com/explore/trail/us/california/long-canyon-trail-to-deer-lake',
   },
 ];
 
