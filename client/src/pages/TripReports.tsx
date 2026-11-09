@@ -65,11 +65,24 @@ const reports: Report[] = [
     ],
   },
   {
-    date: 'September 2024',
-    title: 'TBD',
-    excerpt: 'TBD',
-    img: '/hmr-logo.png',
-    tags: ['TBD'],
+    date: 'August 2024',
+    title: 'Stoney Ridge to Long Canyon',
+    excerpt:
+      'A grueling three-day trek through the Trinity Alps, crossing Stonewall and Deer Creek Passes before tackling the Four Lakes Loop. With relentless elevation changes, rugged alpine terrain, and a snow-covered descent through Long Canyon, this expedition earned its nickname: the Death March.',
+    img: '/death-march-2024.jpg',
+    tags: ['Snow', 'Long Canyon Trail'],
+    story: [
+      'The Death March began at Stoney Ridge Trailhead with a demanding climb toward Stonewall Pass. From there, the route continued across the rugged terrain of Little Stonewall Pass and Deer Creek Pass before reaching Summit Lake, surrounded by the towering peaks of the Trinity Alps.',
+
+      'Day two brought the Four Lakes Loop, connecting Summit, Diamond, Luella, and Deer Lakes. Steep climbs and rocky descents made for another challenging day as the crew navigated the alpine basin and its surrounding mountain passes.',
+
+      'The final day took the crew through Long Canyon, where lingering snowfields added another obstacle to an already exhausting expedition. After three days of steep ascents, unforgiving terrain, and miles of backcountry travel, the crew emerged from the wilderness having completed what would become known as the Death March.',
+    ],
+    lessons: [
+      'Never underestimate lingering snow in the Trinity Alps, even in August.',
+      'A downhill exit does not necessarily mean an easy final day.',
+      'When someone names a trip the Death March, believe them.',
+    ],
   },
 ];
 
