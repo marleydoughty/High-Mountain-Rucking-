@@ -18,7 +18,7 @@ const reports: Report[] = [
     date: 'September 2026',
     title: 'HMR Peak — Death March',
     excerpt:
-      'An unforgettable expedition deep into the Trinity Alps, featuring the rugged Grizzly Scramble, breathtaking Grizzly Lake, and an additional 1,800-foot ascent to an unnamed summit. A challenging climb that led to the discovery and naming of HMR Peak.',
+      'An unforgettable expedition featuring the rugged Grizzly Scramble, breathtaking Grizzly Lake, and an additional 1,800-foot ascent to an unnamed summit. A challenging climb that led to the discovery and naming of HMR Peak.',
     img: '/death-march-2026.jpg',
     tags: ['HMR Peak', 'Trinity Alps', 'Thru-hike', 'Sasquatch'],
     stats: [
@@ -44,7 +44,7 @@ const reports: Report[] = [
     date: 'July 2025',
     title: 'Four Lakes Loop — Extended Edition',
     excerpt:
-      'An extended expedition through the Trinity Alps, featuring alpine lakes, rugged mountain passes, and a summit of Siligo Peak. From Swift Creek to Echo Lake, this challenging route delivers relentless elevation changes and breathtaking wilderness views.',
+      'An extended expedition featuring alpine lakes, rugged mountain passes, and a summit of Siligo Peak. From Swift Creek to Echo Lake, this challenging route delivers relentless elevation changes and breathtaking wilderness views.',
     img: '/death-march-2025.jpg',
     tags: ['Four Lakes Loop', 'Bear Sighting', 'Thunderstorms', 'Whiskey'],
     stats: [
@@ -68,7 +68,7 @@ const reports: Report[] = [
     date: 'August 2024',
     title: 'Stoney Ridge to Long Canyon',
     excerpt:
-      'A grueling three-day trek through the Trinity Alps, crossing Stonewall and Deer Creek Passes before tackling the Four Lakes Loop. With relentless elevation changes, rugged alpine terrain, and a snow-covered descent through Long Canyon, this expedition earned its nickname: the Death March.',
+      'A grueling three-day trek crossing Stonewall and Deer Creek Passes before tackling the Four Lakes Loop. With relentless elevation changes, rugged alpine terrain, and a snow-covered descent through Long Canyon, this expedition earned its nickname: the Death March.',
     img: '/death-march-2024.jpg',
     tags: ['Snow', 'Long Canyon Trail'],
     story: [
