@@ -43,7 +43,7 @@ const routes = [
     img: '/death-march-2024.jpg',
     gpx: '#',
     alltrails:
-      'https://www.alltrails.com/explore/trail/us/california/long-canyon-trail-to-deer-lake',
+      'https://www.alltrails.com/trail/us/california/long-canyon-trail-to-deer-lake',
   },
 ];
 
